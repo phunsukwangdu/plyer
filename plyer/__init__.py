@@ -6,7 +6,7 @@ Plyer
 
 __all__ = ('accelerometer', 'audio', 'battery', 'call', 'camera', 'compass',
            'email', 'filechooser', 'fingerprint', 'gps', 'gyroscope',
-           'irblaster', 'orientation', 'notification', 'sms', 'tts',
+           'irblaster', 'orientation', 'maps', 'notification', 'sms', 'tts',
            'uniqueid', 'vibrator', 'wifi')
 
 __version__ = '1.2.5dev'
@@ -53,6 +53,9 @@ irblaster = Proxy('irblaster', facades.IrBlaster)
 
 #: Orientation proxy to :class:`plyer.facades.Orientation`
 orientation = Proxy('orientation', facades.Orientation)
+
+#: Maps proxy to :class:`plyer.facades.Maps`
+maps = Proxy('maps', facades.Maps)
 
 #: Notification proxy to :class:`plyer.facades.Notification`
 notification = Proxy('notification', facades.Notification)
